@@ -12,14 +12,14 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /src
-COPY ["aam-bonmark-api/aam-bonmark-api.csproj", "aam-bonmark-api/"]
+COPY ["./aam-bonmark-api/aam-bonmark-api.csproj", "aam-bonmark-api/"]
 RUN dotnet restore "aam-bonmark-api/aam-bonmark-api.csproj"
 COPY . .
 WORKDIR "/src/aam-bonmark-api"
-RUN dotnet build "aam-bonmark-api.csproj" -c Release -o /app/build
+RUN dotnet build "./aam-bonmark-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "aam-bonmark-api.csproj" -c Release -o /app/publish
+RUN dotnet publish "./aam-bonmark-api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
