@@ -1,0 +1,15 @@
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/aam-bonmark-user.deps.json
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/aam-bonmark-user.runtimeconfig.json
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/aam-bonmark-user.runtimeconfig.dev.json
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/aam-bonmark-user.dll
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/ref/aam-bonmark-user.dll
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/bin/Release/net5.0/aam-bonmark-user.pdb
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.csproj.AssemblyReference.cache
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.GeneratedMSBuildEditorConfig.editorconfig
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.AssemblyInfoInputs.cache
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.AssemblyInfo.cs
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.csproj.CoreCompileInputs.cache
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.dll
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/ref/aam-bonmark-user.dll
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.pdb
+/home/bchavez/Develop/netcore-api/projects/backoffice/aam-bonmark-user/obj/Release/net5.0/aam-bonmark-user.genruntimeconfig.cache

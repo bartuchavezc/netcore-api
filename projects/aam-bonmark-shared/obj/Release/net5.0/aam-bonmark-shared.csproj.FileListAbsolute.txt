@@ -1,0 +1,15 @@
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/aam-bonmark-shared.deps.json
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/aam-bonmark-shared.runtimeconfig.json
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/aam-bonmark-shared.runtimeconfig.dev.json
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/aam-bonmark-shared.dll
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/ref/aam-bonmark-shared.dll
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/bin/Release/net5.0/aam-bonmark-shared.pdb
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.csproj.AssemblyReference.cache
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.AssemblyInfoInputs.cache
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.AssemblyInfo.cs
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.csproj.CoreCompileInputs.cache
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.dll
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/ref/aam-bonmark-shared.dll
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.pdb
+/home/bchavez/Develop/netcore-api/projects/aam-bonmark-shared/obj/Release/net5.0/aam-bonmark-shared.genruntimeconfig.cache
