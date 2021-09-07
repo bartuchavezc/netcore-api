@@ -7,7 +7,7 @@ services:
     image: aambonmarkapi
     build:
       context: .
-      dockerfile: aam-bonmark-api/Dockerfile
+      dockerfile: porjects/app/aam-bonmark-api/Dockerfile
     ports:
       - 5000:5000
     environment:
