@@ -4,9 +4,9 @@ version: '3.4'
 
 services:
   aambonmarkapi:
-    image: aambonmarkapi
+    image: aam_bonmark_api
     build:
       context: .
-      dockerfile: projects/app/aam-bonmark-api/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - 5000:5000

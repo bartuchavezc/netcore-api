@@ -24,19 +24,11 @@ namespace aam_bonmark_api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            if (!_env.IsDevelopment())
-            {
-                services.AddHttpsRedirection(options =>
-                {
-                    options.RedirectStatusCode = (int)HttpStatusCode.PermanentRedirect;
-                    options.HttpsPort = 443;
-                });
-            }
             services.RegisterProductDatabaseService(Configuration);
 
             services.RegisterUserDatabaseService(Configuration);
             services.RegisterProductServices();
-            
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -54,10 +46,11 @@ namespace aam_bonmark_api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "aam_bonmark_api v1"));
             }
 
-            if (!_env.IsDevelopment())
-            {
-                app.UseHttpsRedirection();
-            }
+
+            // if (!_env.IsDevelopment())
+            // {
+            app.UseHttpsRedirection();
+            // }
 
 
             app.UseRouting();

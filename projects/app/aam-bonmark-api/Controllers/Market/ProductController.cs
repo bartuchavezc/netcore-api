@@ -12,11 +12,6 @@ namespace aam_bonmark_api.Controllers.Market
     [Route("[controller]")]
     public class ProductController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<ProductController> _logger;
         private readonly GetProductsService _getProductsService;
 

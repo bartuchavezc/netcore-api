@@ -1,9 +1,12 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0-focal AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 5000
 
-ENV ASPNETCORE_URLS=http://+:80
-ENV ASPNETCORE_ENVIRONMENT=production
+# ENV ASPNETCORE_URLS=http://+:5000
+ARG BUILD_CONFIGURATION=Debug
+# ENV DOTNET_USE_POLLING_FILE_WATCHER=true 
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_URLS=http://+:5000
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-dotnet-configure-containers
@@ -12,17 +15,17 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /src
-RUN echo $PWD && ls
-COPY ["projects/app/aam-bonmark-api/aam-bonmark-api.csproj", "projects/app/aam-bonmark-api/"]
-RUN dotnet restore "projects/app/aam-bonmark-api/aam-bonmark-api.csproj"
 COPY . .
-WORKDIR "/src/projects/app/aam-bonmark-api"
-RUN dotnet build "aam-bonmark-api.csproj" -c Release -o /app/build
+RUN dotnet restore "aam-bonmark.sln"
+# WORKDIR "/src/projects/app/aam-bonmark-api"
+RUN dotnet build "projects/app/aam-bonmark-api" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "aam-bonmark-api.csproj" -c Release -o /app/publish
+RUN ls -la
+RUN dotnet publish "projects/app/aam-bonmark-api" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "aam-bonmark-api.dll"]
+COPY --from=publish /app .
+RUN ls -la
+ENTRYPOINT ["dotnet", "publish/aam-bonmark-api.dll"]
